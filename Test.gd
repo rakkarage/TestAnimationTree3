@@ -1,16 +1,16 @@
 extends Control
 
-onready var _left := $HBoxContainer/ButtonLeft
-onready var _right := $HBoxContainer/ButtonRight
-onready var _attack := $HBoxContainer/ButtonAttack
-onready var _walk := $HBoxContainer/ButtonWalk
-onready var _mob := $Sprite
+@onready var _left := $HBoxContainer/ButtonLeft
+@onready var _right := $HBoxContainer/ButtonRight
+@onready var _attack := $HBoxContainer/ButtonAttack
+@onready var _walk := $HBoxContainer/ButtonWalk
+@onready var _mob := $Sprite
 
 func _ready() -> void:
-	assert(_left.connect("pressed", self, "_leftPressed") == OK)
-	assert(_right.connect("pressed", self, "_rightPressed") == OK)
-	assert(_attack.connect("pressed", self, "_attackPressed") == OK)
-	assert(_walk.connect("pressed", self, "_walkPressed") == OK)
+	assert(_left.connect("pressed", _leftPressed) == OK)
+	assert(_right.connect("pressed", _rightPressed) == OK)
+	assert(_attack.connect("pressed", _attackPressed) == OK)
+	assert(_walk.connect("pressed", _walkPressed) == OK)
 
 func _rightPressed() -> void:
 	_mob.east()

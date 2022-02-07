@@ -1,8 +1,8 @@
-extends Sprite
+extends Sprite2D
 class_name Mob
 
-onready var _tree: AnimationTree = $AnimationTree
-onready var _machine: AnimationNodeStateMachinePlayback = _tree["parameters/playback"]
+@onready var _tree: AnimationTree = $AnimationTree
+@onready var _machine: AnimationNodeStateMachinePlayback = _tree["parameters/playback"]
 
 const _keyAttackDirection := "parameters/Attack/blend_position"
 
