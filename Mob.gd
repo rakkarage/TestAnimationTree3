@@ -13,9 +13,9 @@ const _keyIdleWest := "parameters/Idle/1/blend_position"
 const _keyWalkDirection := "parameters/Walk/blend_position"
 
 var _idleAnimationPriority := {
-	0: 100,
-	1: 20,
-	2: 1
+	0: 1,
+	1: 3,
+	2: 7
 }
 
 func _ready():
