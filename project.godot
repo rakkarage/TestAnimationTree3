@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="TestAnimationTree3"
-run/main_scene="res://Animate.tscn"
+run/main_scene="res://AnimateNew.tscn"
 config/icon="res://icon.png"
 
 [autoload]
