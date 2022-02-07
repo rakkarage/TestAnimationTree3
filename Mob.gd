@@ -39,10 +39,8 @@ func east() -> void:
 	_tree[_keyAttackDirection] = 1
 	_tree[_keyIdleDirection] = 1
 	_tree[_keyWalkDirection] = 1
-	# _machine.start("Idle")
 
 func west() -> void:
-	_tree[_keyAttackDirection] = 3
-	_tree[_keyIdleDirection] = 3
-	_tree[_keyWalkDirection] = 3
-	# _machine.start("Idle")
+	_tree[_keyAttackDirection] = 0
+	_tree[_keyIdleDirection] = 0
+	_tree[_keyWalkDirection] = 0
