@@ -7,10 +7,10 @@ onready var _walk := $VBox/HBox/Walk
 onready var _mob := $Sprite
 
 func _ready() -> void:
-	assert(_left.connect("pressed", _leftPressed) == OK)
-	assert(_right.connect("pressed", _rightPressed) == OK)
-	assert(_attack.connect("pressed", _attackPressed) == OK)
-	assert(_walk.connect("pressed", _walkPressed) == OK)
+	assert(_left.connect("pressed", self, "_leftPressed") == OK)
+	assert(_right.connect("pressed", self, "_rightPressed") == OK)
+	assert(_attack.connect("pressed", self, "_attackPressed") == OK)
+	assert(_walk.connect("pressed", self, "_walkPressed") == OK)
 
 func _rightPressed() -> void:
 	_mob.east()
