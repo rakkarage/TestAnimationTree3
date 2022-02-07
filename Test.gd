@@ -1,9 +1,9 @@
 extends Control
 
-onready var _left := $VBox/Direction/Left
-onready var _right := $VBox/Direction/Right
-onready var _attack := $VBox/HBox/Attack
-onready var _walk := $VBox/HBox/Walk
+onready var _left := $HBoxContainer/ButtonLeft
+onready var _right := $HBoxContainer/ButtonRight
+onready var _attack := $HBoxContainer/ButtonAttack
+onready var _walk := $HBoxContainer/ButtonWalk
 onready var _mob := $Sprite
 
 func _ready() -> void:
